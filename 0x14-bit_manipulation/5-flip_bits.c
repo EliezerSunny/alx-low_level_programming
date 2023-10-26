@@ -7,11 +7,11 @@
  * @m: destiny
  * Return: nflips
  */
-unsigned int flip_bits(unsigned long int c, unsigned long int d)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned long int xor, bits = 0;
 
-	for (xor = c ^ d; xor > 0; xor >>= 1)
+	for (xor = n ^ m; xor > 0; xor >>= 1)
 	{
 		bits += (xor & 1);
 	}
